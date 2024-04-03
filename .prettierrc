@@ -3,5 +3,22 @@
   "tabWidth": 2,
   "printWidth": 120,
   "singleQuote": true,
-  "semi": true
+  "semi": true,
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "interface",
+    "@/*",
+    "(?=content|api)",
+    "context/",
+    "mock/",
+    "config",
+    "utils/",
+    "hooks/",
+    "(components/|./index)",
+    ".svg",
+    "^../(.*)$",
+    "(?=./styles.module.scss)"
+  ],
+  "importOrderSeparation": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
